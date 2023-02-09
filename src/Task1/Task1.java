@@ -15,11 +15,15 @@ public class Task1 {
         String dataOut = input.nextLine();
         switch (datain) {
             case "int": {
-                System.out.println("Input int m");
-                int mi = input.nextInt();
-                System.out.println("Input int n");
-                int ni = input.nextInt();
-                System.out.println("m= " + mi + " n= " + ni);
+                int mi=0, ni=0;
+                while(mi==ni){
+                    System.out.println("Input m != n");
+                    System.out.println("Input int m");
+                    mi = input.nextInt();
+                    System.out.println("Input int n");
+                    ni = input.nextInt();
+                    System.out.println("m= " + mi + " n= " + ni);
+                }
                 if (dataOut.equals("int")) {
                     System.out.println("Result =  " + ExpressionIntegerInteger(ni, mi));
                 } else if (dataOut.equals("double")) {
@@ -28,11 +32,15 @@ public class Task1 {
                 break;
             }
             case "double": {
-                System.out.println("Input double m");
-                double md = input.nextDouble();
-                System.out.println("Input double n");
-                double nd = input.nextDouble();
-                System.out.println("m= " + md + " n= " + nd);
+                double md=0, nd=0;
+                while(md==nd){
+                    System.out.println("Input m != n");
+                    System.out.println("Input double m");
+                    md = input.nextInt();
+                    System.out.println("Input double n");
+                    nd = input.nextInt();
+                    System.out.println("m= " + md + " n= " + nd);
+                }
                 System.out.println("Result =  " + ExpressionDoubleDouble(nd, md));
                 break;
             }
