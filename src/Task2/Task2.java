@@ -50,6 +50,6 @@ public class Task2 {
                     l++;
             }
         }
-        System.out.println("array without Triplication" + Arrays.toString(arrayWithoutTriplication));
+        System.out.println("array without Triplication: " + Arrays.toString(arrayWithoutTriplication));
     }
 }
