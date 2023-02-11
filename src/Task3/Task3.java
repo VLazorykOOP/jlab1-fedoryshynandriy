@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class Task3 {
     public static void Task3() {
+        System.out.println("Task 3 \n");
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the number of rows and columns: ");
+        System.out.print("Enter number of rows and columns: ");
         int n = sc.nextInt();
         int [][]matrix=new int[n][n];
-        System.out.println("Enter the elements of the array: ");
+        System.out.println("Enter elements of the array: ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print("matrix[" + i + "]" + "[" + j + "]=");
@@ -45,7 +46,8 @@ public class Task3 {
             c++;
         }
 
-        System.out.println("min = "+ min+" column = "+ col);
+        System.out.println("Minimum element= "+ min+" in column: "+ col);
+        System.out.println("New matrix: ");
         for(int i=0; i<n;i++){
             for(int y=0; y<n; y++) {
                 System.out.print(matrix[i][y] + "  ");
