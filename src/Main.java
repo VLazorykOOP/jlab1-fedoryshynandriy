@@ -1,6 +1,5 @@
 import Task2.Task2;
-import Task1.Task1;
-import Task3.Task3;
+
 import java.util.Scanner;
 public class Main {
 
@@ -13,17 +12,16 @@ public class Main {
         System.out.println("2- Second task");
         System.out.println("3- Third task");
         System.out.println("4- Fourth task");
-
-        int task=sc.nextInt();
-        switch (task){
-            case 1:
-                Task1.Task1();
-            case 2:
+//        int task=sc.nextInt();
+//        switch (task){
+//            case 1:
+//                Task1.Task1();
+//            case 2:
                 Task2.Task2();
-            case 3:
-                Task3.Task3();
-
-        }
+//            case 3:
+//                Task3.Task3();
+//
+//        }
 
     }
 }
