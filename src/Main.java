@@ -1,6 +1,7 @@
 import Task1.Task1;
 import Task2.Task2;
 import Task3.Task3;
+import Task4.Task4;
 
 import java.util.Scanner;
 public class Main {
@@ -25,6 +26,8 @@ public class Main {
             case 3:
                 Task3.Task3();
                 break;
+            case 4:
+                Task4.Task4();
 
         }
 
