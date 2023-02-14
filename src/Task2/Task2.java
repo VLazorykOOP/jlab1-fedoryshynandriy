@@ -1,5 +1,5 @@
 package Task2;
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Task2 {
@@ -20,7 +20,13 @@ public class Task2 {
             System.out.print("array["+i+"]= ");
             array[i]=input.nextInt();
         }
-        System.out.println("Your array: "+Arrays.toString(array));
+        System.out.print("Your array: [");
+        for (int i = 0; i < n-1; i++) {
+            System.out.print(array[i] +", ");
+        }
+        System.out.print(array[n-1]+"] ");
+
+        System.out.println();
         int maxValue = 0;
         int l=0;
         for (int i = 0; i < n; i++) {
@@ -67,6 +73,11 @@ public class Task2 {
                     l++;
             }
         }
-        System.out.println("Array without Triplication: " + Arrays.toString(arrayWithoutTriplication));
+       // System.out.println("Array without Triplication: " + Arrays.toString(arrayWithoutTriplication));
+        System.out.print("Array without Triplication: [");
+        for (int i = 0; i < sizeWithout3-1; i++) {
+            System.out.print(arrayWithoutTriplication[i] +", ");
+        }
+        System.out.print(array[sizeWithout3-1]+"] ");
     }
 }
