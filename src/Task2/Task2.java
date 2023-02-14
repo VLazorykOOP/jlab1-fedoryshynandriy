@@ -4,10 +4,16 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void Task2() {
-        System.out.println("Task 3 \n");
+        System.out.println("Task 2 \n");
+        System.out.println("Задано масив цілих чисел <=500. Розробити програму, яка вилучає із A всі числа, які\n" +
+                "повторюються більше трьох разів, а масив ущільнює. \n");
         Scanner input = new Scanner(System.in);
-        System.out.println("Input SIZE of array");
-        int n=input.nextInt();
+        int n=501;
+        while (n>500)
+        {
+            System.out.println("Input SIZE of array <= 500");
+            n=input.nextInt();
+        }
         System.out.println("Input array");
         int[] array = new int[n];
         for (int i = 0; i < n; i++) {

@@ -6,8 +6,8 @@ public class Task4 {
     public static void Task4() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Task 4 \n");
-//      Задано текст, слова в якому розділені пробілами і розділовими знаками.
-//      Розробити програму, яка знаходить і друкує всі слова, букви в яких не повторюються.
+        System.out.println("Задано текст, слова в якому розділені пробілами і розділовими знаками. \n " +
+                "Розробити програму, яка знаходить і друкує всі слова, букви в яких не повторюються.\n");
         System.out.println("Input text");
         String text = sc.nextLine();
         System.out.println("Entered text: \n"+text);

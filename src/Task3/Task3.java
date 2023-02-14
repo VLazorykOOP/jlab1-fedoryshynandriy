@@ -5,9 +5,16 @@ import java.util.Scanner;
 public class Task3 {
     public static void Task3() {
         System.out.println("Task 3 \n");
+        System.out.println("Задана цілочислова матриця <= 20*20. Розробити програму, яка здійснює циклічний\n" +
+                "зсув стовпців так, щоб першим став стовпчик, у якому знаходиться мінімальний елемент\n" +
+                "матриці (вважається, що він єдиний).\n");
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter number of rows and columns: ");
-        int n = sc.nextInt();
+        int n=21;
+        while (n>20)
+        {
+            System.out.println("Input n= SIZE of matrix[n;n] <= 20");
+            n=sc.nextInt();
+        }
         int [][]matrix=new int[n][n];
         System.out.println("Enter elements of the array: ");
         for (int i = 0; i < n; i++) {

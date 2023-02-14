@@ -13,7 +13,7 @@ public class Task1 {
         String datain = input.nextLine();
         System.out.println("Select output data type: int/ double ");
         String dataOut = input.nextLine();
-        switch (datain) {
+        switch (datain){
             case "int": {
                 int mi=0, ni=0;
                 while(mi==ni){
