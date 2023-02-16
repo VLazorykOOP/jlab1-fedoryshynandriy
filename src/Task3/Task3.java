@@ -8,19 +8,27 @@ public class Task3 {
         System.out.println("Задана цілочислова матриця <= 20*20. Розробити програму, яка здійснює циклічний\n" +
                 "зсув стовпців так, щоб першим став стовпчик, у якому знаходиться мінімальний елемент\n" +
                 "матриці (вважається, що він єдиний).\n");
-        Scanner sc=new Scanner(System.in);
+        Scanner input=new Scanner(System.in);
         int n=21;
         while (n>20)
         {
             System.out.println("Input n= SIZE of matrix[n;n] <= 20");
-            n=sc.nextInt();
+            while (!input.hasNextInt()) {
+                input.next();
+                System.out.println("ONLY NUMBERS");
+            }
+            n=input.nextInt();
         }
         int [][]matrix=new int[n][n];
         System.out.println("Enter elements of the array: ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 System.out.print("matrix[" + i + "]" + "[" + j + "]=");
-                matrix[i][j] = sc.nextInt();
+                while (!input.hasNextInt()) {
+                    input.next();
+                    System.out.println("ONLY NUMBERS");
+                }
+                matrix[i][j] = input.nextInt();
             }
         }
         System.out.println("Elements of the array are: ");

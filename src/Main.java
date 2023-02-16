@@ -15,7 +15,8 @@ public class Main {
         System.out.println("2- Second task");
         System.out.println("3- Third task");
         System.out.println("4- Fourth task");
-        int task=sc.nextInt();
+       //int task=sc.nextInt();
+       int task=4;
         switch (task){
             case 1:
                 Task1.Task1();
