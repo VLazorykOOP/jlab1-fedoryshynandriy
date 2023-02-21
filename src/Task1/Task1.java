@@ -14,6 +14,7 @@ public class Task1 {
         String datain = input.nextLine();
         System.out.println("Select output data type: int/ double ");
         String dataOut = input.nextLine();
+        int badInput=0;
         switch (datain){
             case "int": {
                 int mi=0, ni=0;
@@ -23,12 +24,22 @@ public class Task1 {
                     while (!input.hasNextInt()) {
                         input.next();
                         System.out.println("ONLY NUMBERS");
+                        badInput++;
+                        if(badInput>5){
+                            System.exit(0);
+                            badInput=0;
+                        }
                     }
                     mi = input.nextInt();
                     System.out.println("Input int n");
                     while (!input.hasNextInt()) {
                         input.next();
                         System.out.println("ONLY NUMBERS");
+                        badInput++;
+                        if(badInput>5){
+                            System.exit(0);
+                            badInput=0;
+                        }
                     }
                     ni = input.nextInt();
                     System.out.println("m= " + mi + " n= " + ni);
@@ -48,12 +59,22 @@ public class Task1 {
                     while (!input.hasNextInt()) {
                         input.next();
                         System.out.println("ONLY NUMBERS");
+                        badInput++;
+                        if(badInput>5){
+                            System.exit(0);
+                            badInput=0;
+                        }
                     }
                     md = input.nextInt();
                     System.out.println("Input int n");
                     while (!input.hasNextInt()) {
                         input.next();
                         System.out.println("ONLY NUMBERS");
+                        badInput++;
+                        if(badInput>5){
+                            System.exit(0);
+                            badInput=0;
+                        }
                     }
                     nd = input.nextInt();
                 }

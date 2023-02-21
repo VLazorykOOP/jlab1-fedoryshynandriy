@@ -10,12 +10,18 @@ public class Task2 {
                 "повторюються більше трьох разів, а масив ущільнює. \n");
         Scanner input = new Scanner(System.in);
         int n=501;
+        int badInput=0;
         while (n>500)
         {
             System.out.println("Input SIZE of array <= 500");
             while (!input.hasNextInt()) {
                 input.next();
                 System.out.println("ONLY NUMBERS");
+                badInput++;
+                if(badInput>5){
+                    System.exit(0);
+                    badInput=0;
+                }
             }
             n=input.nextInt();
         }
@@ -26,6 +32,11 @@ public class Task2 {
             while (!input.hasNextInt()) {
                 input.next();
                 System.out.println("ONLY NUMBERS");
+                badInput++;
+                if(badInput>5){
+                    System.exit(0);
+                    badInput=0;
+                }
             }
             array[i]=input.nextInt();
         }

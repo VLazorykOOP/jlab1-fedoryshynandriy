@@ -15,7 +15,7 @@ public class Task4 {
         for(String word : text.split(" ")){
             char[] x = word.toCharArray();
             boolean duplicates = false;
-            if ((x[0] >= 'a' && x[0] <= 'z') || (x[0] >= 'A' && x[0] <= 'Z')) {
+            if ((x[0] >= 'a' && x[0] <= 'z') || (x[0] >= 'A' && x[0] <= 'Z')||(x[0] >= 'а' && x[0] <= 'я')||(x[0] >= 'А' && x[0] <= 'Я')) {
                 for (int j = 0; j < x.length; j++) {
                     for (int k = j + 1; k < x.length; k++) {
                         if (x[k] == x[j]) {

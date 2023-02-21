@@ -10,12 +10,18 @@ public class Task3 {
                 "матриці (вважається, що він єдиний).\n");
         Scanner input=new Scanner(System.in);
         int n=21;
+        int badInput=0;
         while (n>20)
         {
             System.out.println("Input n= SIZE of matrix[n;n] <= 20");
             while (!input.hasNextInt()) {
                 input.next();
                 System.out.println("ONLY NUMBERS");
+                badInput++;
+                if(badInput>5){
+                    System.exit(0);
+                    badInput=0;
+                }
             }
             n=input.nextInt();
         }
@@ -27,6 +33,11 @@ public class Task3 {
                 while (!input.hasNextInt()) {
                     input.next();
                     System.out.println("ONLY NUMBERS");
+                    badInput++;
+                    if(badInput>5){
+                        System.exit(0);
+                        badInput=0;
+                    }
                 }
                 matrix[i][j] = input.nextInt();
             }
